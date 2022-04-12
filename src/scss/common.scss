@@ -512,3 +512,51 @@
 		}
 	}
 }
+
+//========================================================================================================================================================
+// STAR
+
+.star {
+	color: $orange-clr;
+	font-size: rem(28);
+	line-height: 0.75;
+	letter-spacing: em(8, 30);
+	margin-right: rem(12);
+
+	&_5 {
+		&::after {
+			content: "★★★★★";
+		}
+	}
+
+	&_4 {
+		&::after {
+			content: "★★★★";
+		}
+	}
+	&_3 {
+		&::after {
+			content: "★★★";
+		}
+	}
+	&_2 {
+		&::after {
+			content: "★★";
+		}
+	}
+	&_1 {
+		&::after {
+			content: "★";
+		}
+	}
+
+	&_dflex {
+		display: flex;
+		align-items: center;
+	}
+
+	&__rating {
+		font-size: rem(16);
+		line-height: math.div(20, 16);
+	}
+}

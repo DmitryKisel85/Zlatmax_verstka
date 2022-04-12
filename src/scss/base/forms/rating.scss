@@ -4,9 +4,8 @@
 	display: flex;
 	align-items: flex-end;
 	justify-content: space-between;
-	font-size: rem(30);
+	font-size: rem(28);
 	line-height: 0.75;
-
 	transition: opacity 0.3s ease 0s;
 }
 .rating.rating_sending {
@@ -40,7 +39,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	color: #ffd300;
+	color: $orange-clr;
 }
 
 .rating__items {
@@ -66,4 +65,8 @@
 .rating__info {
 	color: #ababab;
 	font-size: rem(16);
+}
+
+.rating_pointer-none {
+	pointer-events: none;
 }

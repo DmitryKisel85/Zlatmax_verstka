@@ -26,10 +26,14 @@
 
 	// .catalog__control
 	&__control {
-		display: flex;
-		justify-content: flex-end;
+		align-self: flex-end;
 		&:not(:last-child) {
 			margin-bottom: rem(20);
+		}
+
+		@media (max-width: $mobile) {
+			margin-top: rem(20);
+			align-self: flex-start;
 		}
 	}
 
@@ -91,6 +95,10 @@
 .price-filter {
 	padding: rem(30);
 
+	&_smallpaddings {
+		padding: 0 rem(30);
+	}
+
 	// .price-filter__title
 	&__title {
 		display: flex;
@@ -124,7 +132,7 @@
 		border-radius: rem(2);
 		overflow: hidden;
 		&:not(:last-child) {
-			margin-bottom: rem(40);
+			margin-bottom: rem(20);
 		}
 	}
 
@@ -142,6 +150,7 @@
 
 	// .price-filter__range
 	&__range {
+		margin-bottom: rem(50);
 	}
 }
 

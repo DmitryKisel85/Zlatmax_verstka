@@ -18,9 +18,18 @@ export function rangeInit() {
 
 			noUiSlider.create(item, {
 				start: [+fromValue.value, +toValue.value], // [0,200000]
+				format: {
+					to: function (value) {
+						return parseInt(value);
+					},
+					from: function (value) {
+						return parseInt(value);
+					},
+				},
 				step: 1,
 				connect: true,
 				tooltips: [true, true],
+				// tooltips: [wNumb({ decimals: 0 })],
 				range: {
 					min: [+fromValue.dataset.rangeFrom],
 					max: [+toValue.dataset.rangeTo],

@@ -154,6 +154,14 @@ body {
 	// .page__header
 	&__header {
 		margin-bottom: rem(30);
+		&_inner {
+			display: flex;
+			justify-content: space-between;
+
+			@media (max-width: $mobile) {
+				flex-direction: column;
+			}
+		}
 	}
 
 	// .page__main-block
