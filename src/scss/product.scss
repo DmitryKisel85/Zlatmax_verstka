@@ -12,6 +12,8 @@
 		@include adaptiveValue("margin-bottom", 120, 40);
 	}
 }
+//========================================================================================================================================================
+
 .main-product {
 	display: grid;
 	align-items: start;
@@ -27,6 +29,8 @@
 		grid-template-columns: percent(785, 1600) 1fr;
 	}
 }
+//========================================================================================================================================================
+
 .images-product {
 	display: grid;
 	gap: rem(16);
@@ -48,6 +52,7 @@
 	&__thumbs {
 	}
 }
+//========================================================================================================================================================
 
 .thumbs-images {
 	// .thumbs-images__wrapper
@@ -65,25 +70,25 @@
 
 .body-product {
 	background: #fefefe;
-	box-shadow: 0px rem(4) rem(20) rgba(0, 0, 0, 0.1);
+	box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.1);
 	@include adaptiveValue("padding", 30, 15);
 
 	// .body-product__header
 	&__header {
 		border-bottom: 1px solid rgba(20, 20, 20, 0.15);
-		padding: 0 0 rem(30) 0px;
+		padding: 0 0 rem(30) 0;
 	}
 
 	// .body-product__table
 	&__table {
 		border-bottom: 1px solid rgba(20, 20, 20, 0.15);
-		padding: rem(30) 0px;
+		padding: rem(30) 0;
 	}
 
 	// .body-product__options
 	&__options {
 		border-bottom: 1px solid rgba(20, 20, 20, 0.15);
-		padding: rem(30) 0px;
+		padding: rem(30) 0;
 	}
 
 	// .body-product__actions
@@ -91,6 +96,8 @@
 		padding: rem(30) 0 0 0;
 	}
 }
+//========================================================================================================================================================
+
 .header-product {
 	// .header-product__line
 	&__line {
@@ -117,11 +124,8 @@
 	&__link {
 		font-size: rem(24);
 	}
-
-	// .header-product__rating
-	&__rating {
-	}
 }
+//========================================================================================================================================================
 
 .table-product {
 	display: grid;
@@ -131,18 +135,15 @@
 		grid-template-columns: rem(200) 1fr;
 	}
 
-	// .table-product__label
-	&__label {
-	}
-
 	// .table-product__value
 	&__value {
 		color: rgba(20, 20, 20, 0.5);
 	}
 }
+//========================================================================================================================================================
+
 .options-product {
 	display: grid;
-
 	gap: rem(20);
 
 	@media (min-width: $mobile) {
@@ -153,11 +154,8 @@
 	&__label {
 		align-self: center;
 	}
-
-	// .options-product__value
-	&__value {
-	}
 }
+//========================================================================================================================================================
 
 .actions-product {
 	// .actions-product__price
@@ -216,7 +214,6 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
 
 .product-info {
@@ -246,6 +243,8 @@
 			width: 100%;
 		}
 		&._tab-active {
+			font-weight: 700;
+			color: $mainDarkColor;
 			&::after {
 				content: "";
 				position: absolute;
@@ -265,8 +264,14 @@
 
 	// .product-info__body
 	&__body {
+		font-size: rem(18);
+		line-height: math.div(27, 18);
 		._tab-spoller & {
 			padding: rem(30) 0 0 0;
+		}
+
+		&_bold-text {
+			font-weight: 600;
 		}
 	}
 }

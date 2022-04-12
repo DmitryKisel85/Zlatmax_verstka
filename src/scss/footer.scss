@@ -1,25 +1,13 @@
 //====================================================================================================
 .footer {
 	background-color: $mainDarkColor;
-	// .footer__text
-	&__text {
-	}
-
-	// .footer__container
-	&__container {
-	}
-
-	// .footer__body
-	&__body {
-	}
 }
+//========================================================================================================================================================
+
 .text-footer {
 	@include adaptiveValue("padding-top", 60, 40);
 	@include adaptiveValue("padding-bottom", 40, 40);
 	background: url("@img/footer/bg.jpg") top / cover no-repeat;
-	// .text-footer__container
-	&__container {
-	}
 
 	// .text-footer__title
 	&__title {
@@ -41,6 +29,7 @@
 		line-height: math.div(27, 18);
 	}
 }
+//========================================================================================================================================================
 
 .body-footer {
 	@include adaptiveValue("padding-top", 100, 40);
@@ -56,13 +45,9 @@
 		@include adaptiveValue("row-gap", 40, 20);
 
 		&:not(:last-child) {
-			padding: 0px 0px rem(30) 0px;
+			padding: 0 0 rem(30) 0;
 			border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 		}
-	}
-
-	// .body-footer__item
-	&__item {
 	}
 
 	// .body-footer__bottom
@@ -90,18 +75,8 @@
 		}
 	}
 }
-
-.item-footer {
-	// .item-footer__spoller
-
-	&__spoller {
-	}
-}
+//========================================================================================================================================================
 .spoller-item-footer {
-	// .spoller-item-footer__item
-	&__item {
-	}
-
 	// .spoller-item-footer__title
 	&__title {
 		text-transform: uppercase;
@@ -118,7 +93,7 @@
 			&::after {
 				content: "\e90c";
 				font-size: rem(8);
-				margin: em(5, 8) 0px 0px 0px;
+				margin: em(5, 8) 0 0 0;
 				transition: transform 0.3s ease 0s;
 				@extend %ic;
 			}
@@ -152,14 +127,10 @@
 		}
 	}
 }
-
+//========================================================================================================================================================
 .menu-footer {
 	&:not(:last-child) {
 		@include adaptiveValue("margin-bottom", 32, 20);
-	}
-
-	// .menu-footer__list
-	&__list {
 	}
 
 	// .menu-footer__item
@@ -183,30 +154,23 @@
 		color: rgba(255, 255, 255, 0.8);
 		&::before {
 			font-size: rem(18);
-			margin: em(5, 15) em(10, 15) 0px 0px;
+			margin: em(5, 15) em(10, 15) 0 0;
 		}
 		&._icon-footer-email {
 			&::before {
+				display: block;
+				transform: translateY(rem(3));
 				font-size: rem(13);
 			}
 		}
 	}
 }
-
+//========================================================================================================================================================
 .social-footer {
 	display: flex;
 	gap: rem(24);
-	// .social-footer__item
-	&__item {
-	}
-
-	// .social-footer__link
-	&__link {
-	}
 }
-
 //========================================================================================================================================================
-
 .footer-subscribe {
 	color: rgba(255, 255, 255, 0.8);
 	// .footer-subscribe__label
@@ -221,7 +185,6 @@
 	// .footer-subscribe__line
 	&__line {
 		display: flex;
-
 		position: relative;
 
 		.form__error {
@@ -258,5 +221,4 @@
 		}
 	}
 }
-
 //========================================================================================================================================================

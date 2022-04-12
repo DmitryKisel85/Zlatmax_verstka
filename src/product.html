@@ -119,16 +119,43 @@
 
 						<div data-tabs="992" class="product__info product-info">
 							<nav data-tabs-titles class="product-info__navigation">
-								<button type="button" class="product-info__title _tab-active">Таб №1</button>
-								<button type="button" class="product-info__title">Таб №2</button>
-								<button type="button" class="product-info__title">Таб №3</button>
+								<button type="button" class="product-info__title _tab-active">Описание</button>
+								<button type="button" class="product-info__title">Характеристика</button>
+								<button type="button" class="product-info__title">Отзывы</button>
+								<button type="button" class="product-info__title">Доставка</button>
 							</nav>
 							<div data-tabs-body class="product-info__content">
-								<div class="product-info__body">Содержимое первого таба</div>
+								<div class="product-info__body">
+									<p>
+										Легкий удобный <span class="product-info__body_bold-text">нож с клинком</span> , имеющим пологие вогнутые линзовидные спуски
+										<span class="product-info__body_bold-text">на две трети ширины клинка</span>, образующие тонкое, прекрасно режущее лезвие толщиной <span class="product-info__body_bold-text">около 0,6 мм</span> в
+										районе подводов.
+									</p>
+									<br />
+									<p>
+										<span class="product-info__body_bold-text">Обух клинка со спинкой рукояти</span> имеет одну плавную дугообразную линию. На пяте перед рукоятью есть подпальцевый
+										<span class="product-info__body_bold-text"> вырез для точных работ</span>.
+									</p>
+									<br />
+									<p>
+										Необходимо проявлять некоторую осторожность при работе с большими боковыми нагрузками <span class="product-info__body_bold-text"> на лезвие ножа </span>, ввиду небольшой толщины клинка в рабочей
+										части.
+									</p>
+									<br />
+									<p>
+										Монтаж рукояти накладной <span class="product-info__body_bold-text">плашечный</span>. На навершии рукояти, функцию которого выполняет выступающий из под плашек хвостовик, имеется
+										<span class="product-info__body_bold-text"> отверстие под темляк</span>. Этот нож удобный помощник при работе
+										<span class="product-info__body_bold-text"> с продуктами и охоте на боровую и водоплавающую дичь</span>.
+									</p>
+								</div>
 								<div class="product-info__body">Содержимое второго таба</div>
+								<div class="product-info__body">Содержимое третьего таба</div>
 								<div class="product-info__body">Содержимое третьего таба</div>
 							</div>
 						</div>
+
+						<section class="page__sale-products sale-products sale-products_no-top sale-products_no-bottom">@@include('html/_products-slider.htm',{ "title":"Похожие товары", "moretext": "Перейти в каталог" })</section>
+						<section class="page__hits-products hits-products hits-products_no-top">@@include('html/_products-slider.htm',{ "title":"Рекомендуем", "moretext": "Перейти в каталог" })</section>
 					</div>
 				</div>
 			</main>

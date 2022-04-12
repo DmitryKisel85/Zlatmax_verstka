@@ -66,8 +66,7 @@
 			gap: rem(15);
 			justify-content: center;
 			transform: translate(0, 15%);
-			// margin: 0 auto;
-			// overflow: hidden;
+
 			.swiper-pagination-bullet {
 				cursor: pointer;
 				width: rem(18);
@@ -112,6 +111,7 @@
 		}
 	}
 }
+//========================================================================================================================================================
 
 .product-card {
 	position: relative;
@@ -119,11 +119,11 @@
 	height: 100%;
 	grid-template-rows: auto 1fr;
 	background-color: $white-clr;
-	box-shadow: 0px rem(4) rem(20) rgba(0, 0, 0, 0.1);
+	box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.1);
 	transition: box-shadow 0.3s ease 0s;
 	@media (any-hover: hover) {
 		&:hover {
-			box-shadow: 0px rem(4) rem(20) rgba(0, 0, 0, 0.25);
+			box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.25);
 		}
 	}
 
@@ -178,10 +178,6 @@
 		}
 	}
 
-	// .product-card__link-title
-	&__link-title {
-	}
-
 	// .product-card__info
 	&__info {
 		&:not(:last-child) {
@@ -233,11 +229,12 @@
 			align-items: center;
 			justify-content: center;
 			&::before {
-				margin: 0px 0px 0px rem(16);
+				margin: 0 0 0 rem(16);
 			}
 		}
 	}
 }
+//========================================================================================================================================================
 
 .info-product-card {
 	color: #ababab;
@@ -303,9 +300,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-
 .products-new {
 	padding: rem(45) 0 0 0;
 	position: relative;
@@ -367,7 +362,7 @@
 		min-width: 0;
 
 		@media (min-width: $tablet) {
-			padding: rem(37) 0px 0px 0px;
+			padding: rem(37) 0 0 0;
 		}
 	}
 
@@ -400,10 +395,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-// BREADCRUMPS
-
 .breadcrumbs {
 	white-space: nowrap;
 	overflow: auto;
@@ -437,7 +429,8 @@
 		color: $orange-clr;
 	}
 }
-//
+//========================================================================================================================================================
+
 .title {
 	font-weight: 700;
 	font-size: rem(24);
@@ -447,8 +440,6 @@
 	}
 }
 //========================================================================================================================================================
-// PAGING
-
 .pagging {
 	display: flex;
 	justify-content: flex-end;
@@ -486,10 +477,6 @@
 		gap: rem(13);
 	}
 
-	// .pagging__item
-	&__item {
-	}
-
 	// .pagging__link
 	&__link {
 		width: rem(34);
@@ -512,9 +499,7 @@
 		}
 	}
 }
-
 //========================================================================================================================================================
-// STAR
 
 .star {
 	color: $orange-clr;

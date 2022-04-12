@@ -1,10 +1,6 @@
 .catalog {
 	@include adaptiveValue("padding-bottom", 120, 40);
 
-	// .catalog__container
-	&__container {
-	}
-
 	// .catalog__body
 	&__body {
 		display: grid;
@@ -15,15 +11,6 @@
 			grid-template-columns: rem(375) 1fr;
 		}
 	}
-
-	// .catalog__filter
-	&__filter {
-	}
-
-	// .catalog__content
-	&__content {
-	}
-
 	// .catalog__control
 	&__control {
 		align-self: flex-end;
@@ -57,21 +44,12 @@
 			flex-direction: column;
 		}
 	}
-
-	// .catalog__more
-	&__more {
-	}
-
-	// .catalog__pagging
-	&__pagging {
-	}
 }
-
 //========================================================================================================================================================
 
 .filter-catalog {
 	background: #fefefe;
-	box-shadow: 0px rem(4) rem(20) rgba(0, 0, 0, 0.1);
+	box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.1);
 
 	// .filter-catalog__title
 	&__title {
@@ -83,15 +61,10 @@
 		line-height: math.div(24, 20);
 		padding: rem(20) rem(30);
 	}
-
-	// .filter-catalog__items
-	&__items {
-	}
-
-	// .filter-catalog__price
-	&__price {
-	}
 }
+
+//========================================================================================================================================================
+
 .price-filter {
 	padding: rem(30);
 
@@ -153,6 +126,8 @@
 		margin-bottom: rem(50);
 	}
 }
+
+//========================================================================================================================================================
 
 .item-filter-catalog {
 	// .item-filter-catalog__title
